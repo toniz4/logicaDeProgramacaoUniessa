@@ -11,7 +11,7 @@ int main(void)
 	y = 7;
 	z = 10;
 
-	if (pow(((x*2) + x * y + z - y), 2) > pow(((x + x)*(y + z - y)), 2))
+	if (pow(((x*2) + x * y + z - y), 2) > ((x + x)*pow((y + z - y), 2)))
 		printf("Verdadeiro\n");
 	else
 		printf("Falso\n");
